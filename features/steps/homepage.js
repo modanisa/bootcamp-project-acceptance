@@ -14,3 +14,11 @@ When("page is loaded", async function () {
 Then(`title should be {string}`, async function (title) {
     await checkTitle.call(this, title)
 });
+
+When("user searches for {string}", function () {
+
+});
+
+Then("customer should navigate to related {string} listing page", function () {
+
+});
