@@ -1,0 +1,29 @@
+{
+  "name": "bootcamp-project-acceptance",
+  "author": "modanisa",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "cucumber",
+    "puppeteer"
+  ],
+  "license": "ISC",
+  "files": [
+    "/features"
+  ],
+  "scripts": {
+    "start": "npx cucumber-js --format progress -f json:test/reports/cucumber_report.json",
+    "generate-report": "yarn start && node reporter.js"
+  },
+  "dependencies": {
+    "axe-puppeteer": "^1.1.1",
+    "axe-reports": "^1.1.11",
+    "cucumber": "^6.0.5",
+    "dotenv": "^8.6.0",
+    "pixelmatch": "^5.2.1",
+    "puppeteer": "^8.0.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.5.0"
+  }
+}
