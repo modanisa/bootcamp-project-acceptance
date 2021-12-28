@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "start": "npx cucumber-js --format progress -f json:test/reports/cucumber_report.json",
+    "work": "npx cucumber-js --format progress --tags @work",
     "generate-report": "yarn start && node reporter.js"
   },
   "dependencies": {
